@@ -5,9 +5,7 @@ const addProduct = async (req, res) => {
     ...req.body,
   });
 
-  res.status(201).json({
-    product,
-  });
+  res.status(201).json(product);
 };
 
 module.exports = addProduct;
