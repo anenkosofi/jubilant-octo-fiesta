@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 const Joi = require('joi');
 
 const addProductSchema = Joi.object({
-  id: Joi.string().required(),
+  product: Joi.string().required(),
   quantity: Joi.string().required(),
 });
 
