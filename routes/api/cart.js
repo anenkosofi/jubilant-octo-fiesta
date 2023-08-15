@@ -1,4 +1,4 @@
-import { addProductSchema, changeProductQtySchema } from '../../models';
+const { addProductSchema, changeProductQtySchema } = require('../../models');
 const express = require('express');
 
 const { cart } = require('../../controllers');

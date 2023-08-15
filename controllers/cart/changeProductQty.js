@@ -1,6 +1,6 @@
-import { NotFound } from 'http-errors';
+const { NotFound } = require('http-errors');
 
-import { Cart } from '../../models';
+const { Cart } = require('../../models');
 
 const changeProductQty = async (req, res) => {
   const { productId } = req.params;
