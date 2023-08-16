@@ -14,9 +14,7 @@ const changeProductQty = async (req, res) => {
   if (!updatedProduct) {
     throw new NotFound(`Product with id=${productId} is not found`);
   }
-  res.json({
-    updatedProduct,
-  });
+  res.json(updatedProduct);
 };
 
 module.exports = changeProductQty;
